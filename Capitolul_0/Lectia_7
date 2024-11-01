@@ -1,0 +1,22 @@
+
+#Luna
+
+def nomMois(n):
+    mois = ['Joniver,', 'Fevrier', 'Mars', 'Avril','Mai','Juin', 'july', 'august']
+    return mois[n-1]
+print(nomMois(7))
+
+
+#calendar
+
+mois = [[31, 28, 31, 30, 31, 30, 31, 30, 31, 30]]
+        ['ianuarie',
+         'februaria',
+         'martie',
+         'aprilie',
+         'mai',
+         'iunie',
+         'iulie',
+         'august',
+         'septembrie'
+        ]

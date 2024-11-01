@@ -1,0 +1,34 @@
+
+# Punctul 1 minicalculator
+
+#BrinzaIonutCristian:
+import math
+a = 3
+b = 10
+c = a + b
+print(c)
+print (math.cos(c))
+print('==========================')
+
+
+# Punctul 2 multiplicarea tablouri
+
+m = [[3, 3, 3, 3, 3, 3],
+     [3, 3, 3, 3, 3, 3],
+     [3, 3, 3, 3, 3, 3],
+     [3, 3, 3, 3, 3, 3],
+     [3, 3, 3, 3, 3, 3],
+     [3, 3, 3, 3, 3, 3]]
+for row in m:
+    print(row)
+rez = [[m[j][i] for j in range(len(m))] for i in range(len(m[0]))]
+print('==========================================================================')
+
+
+
+#Punctul 3 calcularea volumului
+def volBoite(x1, x2, x3):
+    return x1 * x2 * x3
+print(volBoite(3, 10, 4))
+print('===================')
+

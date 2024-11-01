@@ -1,0 +1,55 @@
+# transpunere lista
+m = [[1, 2], [3, 4], [5, 6]]
+for row in m:
+    print(row)
+rez = [[m[j][i] for j in range(len(m))] for i in range(len(m[0]))]
+for row in rez:
+    print(row)
+print('==========================================================================')
+
+#if
+a = 0 #daca este 0 atunci este nul daca e 1 atunci pozitiv si daca -1 este negativ
+if a > 0:
+    print("a est positive")
+elif a < 0:
+    print("a est negative")
+else:
+    print("a est nul😊")
+print('==================================================================')
+
+
+#simplu calculator
+
+op = input('Operatia ?  (+ , - , * , / , ** , %, sqrt, sin ): ')
+a = float(input('a :'))
+b = float(input('b :'))
+import math
+
+if op == '+':
+    c = a + b
+    print(' result =:' + ' ' + '' + str(c))
+elif op == '-':
+    c = a - b
+    print(' result =:' + ' ' + '' + str(c))
+elif op == '*':
+    c = a * b
+    print(' result =:' + ' ' + '' + str(c))
+elif op == '/':
+    c = a / b
+    print(' result =:' + ' ' + '' + str(c))
+elif op == '^':
+    c = a ** b
+    print(' result =:' + ' ' + '' + str(c))
+elif op == '%':
+    c = a % b
+    print(' result =:' + ' ' + '' + str(c))
+elif op == 'sqrt':
+    c = math.sqrt(a)
+    print(' result =:' + ' '+''+ str(a))
+elif op == 'sin':
+    c = math.sin(a)
+    print(' result =:' + ' ' + '' + str(c))
+else:
+    print('operatia nu este')
+
+print('====================================')

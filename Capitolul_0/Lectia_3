@@ -1,0 +1,39 @@
+# liste inmultire
+n=5
+a = [[0] * n for i in range(n)]
+for i in range(n):
+    for j in range(n):
+        if i < j:
+            a[i][j] = 2
+        elif i > j:
+            a[i][j] = 3
+        else:
+            a[i][j] = 1
+print (a)
+
+b = [[0] * n for i in range(n)]
+for i in range(n):
+    for j in range(n):
+        if i < j:
+            b[i][j] = 4
+        elif i > j:
+            b[i][j] = 5
+        else:
+            b[i][j] = 6
+print (b)
+
+#VA FI ASTA LA TEST
+
+#VARIANTA 1
+result = [[0] * n for i in range(n)]
+for i in range(len(a)):
+    for j in range(len(b[0])):
+        for k in range(len(b)):
+            result[i][j] += a[i][k] * b[k][j]
+for r in result:
+    print(r)
+print('==========================')
+
+
+
+

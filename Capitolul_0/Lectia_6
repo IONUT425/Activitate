@@ -1,0 +1,48 @@
+import turtle
+
+k = turtle.Turtle()
+
+k.speed(1)
+
+k.color('#3C9118', 'Yellow')
+
+k.begin_fill()
+k.forward(100)
+
+k.left(90)
+k.forward(100)
+
+k.left(90)
+k.forward(100)
+
+k.left(90)
+k.forward(100)
+
+k.end_fill()
+
+for i in range(10):
+    k.forward(20)
+    k.left(15)
+k.penup()
+k.forward(150)
+k.pendown()
+
+k.color('#3C9118', 'Purple')
+k.begin_fill()
+k.forward(100)
+
+k.left(90)
+k.forward(100)
+
+k.left(90)
+k.forward(100)
+
+k.left(90)
+k.forward(100)
+k.end_fill()
+
+import datetime
+x = datetime.datetime.now()
+print(x)
+
+turtle.done()

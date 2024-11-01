@@ -1,0 +1,32 @@
+#id(a)
+#type(a)
+
+#integer
+number = 5
+print('=======================================================')
+print(number) #va scrie expresia number = 5
+print('number') #text va scrie
+print('=======================================================')
+# ecrnaziare; varianta 1
+print('number \'number1\' number2')
+# ecranizarea; varianta 2)
+print('number "number1" number2')
+print('=======================================================')              #daca textul ara cu rosu atunci este o greseala in cmd
+
+name='Ionut'
+print('Eu ma numesc ' + name)
+print('=======================================================')
+age = 15 #daca noi nu punem ; la age15 atunci scriem str(age))
+print('=======================================================')
+print('Eu ma numesc ' + name + ' si am ' +str(age))
+#inpyut
+name1 = input('Spuneti numele:')
+print(name1 + ', Bravo ! ')
+age1 = input('Varsta:')
+print('wow tu ai', age1 + ', est pre Tiner:! ')
+print('=======================================================')
+
+
+
+
+

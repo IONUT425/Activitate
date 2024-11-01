@@ -1,0 +1,76 @@
+import pygame
+from sys import exit
+
+#simple pygame programs
+
+#standart block
+pygame.init()
+#set up the drawing window
+screen = pygame.display.set_mode((800, 400))
+pygame.display.set_caption('Runner')
+clock = pygame.time.Clock()
+test_font = pygame.font.Font(None, 50)
+sky_surface = pygame.image.load('imagine77.png')
+text_surface = test_font.render("It's my game", False, "Green")
+text_surface2 = test_font.reader("Hello World !", False, "Red")
+ground_surface = pygame.image.load('imagine88.png')
+snail_surface = pygame.image.load('imagine03.png')
+snail_x_pos = 370
+while True:
+#Did the user clicks the windows cl
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+        snail_x_pos+=1
+        if snail_x_pos==800: snail_x_pos=370
+        screen.blit(ground_surface, (snail_x_pos,120))
+import turtle
+
+k = turtle.Turtle()
+
+k.speed(1)
+
+k.color('#3C9118', 'Yellow')
+
+k.begin_fill()
+k.forward(100)
+
+k.left(90)
+k.forward(100)
+
+k.left(90)
+k.forward(100)
+
+k.left(90)
+k.forward(100)
+
+k.end_fill()
+
+for i in range(10):
+    k.forward(20)
+    k.left(15)
+k.penup()
+k.forward(150)
+k.pendown()
+
+k.color('#3C9118', 'Purple')
+k.begin_fill()
+k.forward(100)
+
+k.left(90)
+k.forward(100)
+
+k.left(90)
+k.forward(100)
+
+k.left(90)
+k.forward(100)
+k.end_fill()
+
+import datetime
+x = datetime.datetime.now()
+print(x)
+
+turtle.done()
+#pip install pygame
